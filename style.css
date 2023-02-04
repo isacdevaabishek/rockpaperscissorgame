@@ -1,0 +1,65 @@
+*{
+    background-color:rgba(0,0,32,255);
+    font-family: 'Sassy Frass', cursive;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.select{
+    display: flex;
+}
+.select button img{
+    width: 150px;
+   
+   border: 2px solid #FF10F0;
+   border-radius: 10px;
+   padding: 10px;
+
+}
+.select button{
+    background: none;
+    background-color: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+.select p{
+    color: #FF10F0;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+span p{
+    color: #FFFF33;
+    text-align: center;
+    font-size: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    /* top:20px; */
+    animation-name: slide;
+    animation-duration: 5s;
+}
+@keyframes slide{
+    0%{opacity: 0;}
+    50%{ opacity: 0;}
+    75%{ opacity: 0;}
+    90%{ opacity: 0;}
+    100%{ opacity: 1;}
+    }
+span img{
+    width: 500px;  
+   position: relative;
+   left: 500px;
+   /* top:90px; */
+}
+span{
+    display: block;
+    justify-content: center;
+}

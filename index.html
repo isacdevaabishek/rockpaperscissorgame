@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=in, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form action="">
+    <input type="text" id="name">
+</form> -->
+  <div class="select">
+    <div class="rock">
+    <button onclick="isac()" id="rock" value=1><img src="rockimg.jpg" alt=""></button>
+    <p>rock</p>  
+</div>
+<div class="paper">
+    <button onclick="deva()" id="paper" value=2><img src="paperimg.jpg" alt=""></button>
+    <p>paper</p>
+</div>
+<div class="scissors">
+    <button onclick="abi()" id="scissors" value=3><img src="scissorimg.jpg" alt=""></button>
+    <p>scissor</p>
+</div>
+</div>
+
+    <span >
+        <p id="comp"></p>
+        <img src="" alt="" id="gif">
+      
+    </span>
+    
+    <script>
+
+        function isac() {
+            const rock = document.getElementById("rock").value
+            const paper = document.getElementById("paper").value
+            const scissors = document.getElementById("scissors").value
+
+            let array1 = [isac1, isac2]
+
+            array1[Math.floor(Math.random() * array1.length)]();
+            function isac1() {
+                if (rock < paper) {
+                    document.getElementById("gif").src="paperanime.gif"
+                    document.getElementById("comp").innerText="you lose"
+                }
+            }
+            function isac2() {
+                if (rock < paper) {
+                    document.getElementById("gif").src="scissoranime.gif"
+                    document.getElementById("comp").innerText="you win"
+                }
+            }
+        }
+
+        function deva() {
+            const rock = document.getElementById("rock").value
+            const paper = document.getElementById("paper").value
+            const scissors = document.getElementById("scissors").value
+
+            let array2 = [deva1, deva2]
+
+            array2[Math.floor(Math.random() * array2.length)]();
+
+
+            function deva1() {
+                if (paper < scissors) {
+                    document.getElementById("gif").src="scissoranime.gif"
+                    document.getElementById("comp").innerText="you lose"
+                }
+            }
+            function deva2() {
+                if (paper < scissors) {
+                    document.getElementById("gif").src="rockanime.gif"
+                    document.getElementById("comp").innerText="you win"
+                    
+                }
+            }
+        }
+        function abi() {
+            const rock = document.getElementById("rock").value
+            const paper = document.getElementById("paper").value
+            const scissors = document.getElementById("scissors").value
+
+            let array3 = [abi1, abi2]
+
+            array3[Math.floor(Math.random() * array3.length)]();
+
+
+            function abi1() {
+                if (scissors > rock) {
+                    document.getElementById("gif").src="paperanime.gif"
+                    document.getElementById("comp").innerText="you win"
+                }
+            }
+            function abi2() {
+                if (scissors > rock) {
+                    document.getElementById("gif").src="rockanime.gif"
+                    document.getElementById("comp").innerText="you lose"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
